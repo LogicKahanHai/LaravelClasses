@@ -4,6 +4,7 @@
  */
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemsController;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -21,5 +22,10 @@ Route::get("home/hello-world", [HomeController::class, 'helloWorld']);
  */
 Route::get("home/add/{n1?}/{n2?}", [HomeController::class, 'addNumbers']);
 
+
+/**
+ * This is a part of a class question.
+ */
+Route::get("items", [ItemsController::class, 'itemsdata'])
 
 ?>
