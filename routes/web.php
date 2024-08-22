@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('redirect')->group(base_path('routes/redirect.php'));
 Route::prefix('activity')->group(base_path('routes/conditionalRedirect.php'));
 Route::prefix('responses')->group(base_path('routes/responses.php'));
+Route::prefix('controllers')->group(base_path('routes/routesWithControllers.php'));
+
 
 
 
