@@ -4,29 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Items Data</title>
+    <title>Document</title>
 </head>
 
 <body>
     <table border>
         <tr>
-            <th><b>Name</b></th>
-            <th><b>Price</b></th>
+            <th>Product</th>
+            <th>Price</th>
         </tr>
         <?php
-
-        foreach ($items as $device) {
+        foreach ($products as $pdt) {
             echo "<tr>";
             echo "<td>";
-            echo $device["name"];
+            echo $pdt["productname"];
             echo "</td>";
             echo "<td>";
-            echo $device["price"];
+            echo $pdt["price"];
             echo "</td>";
             echo "</tr>";
         }
         ?>
+
     </table>
+
+    <?php
+    if ($finalPrice != null && $pdtName != null) {
+        echo "Discount Applied! $pdtName has 10% discount. The final price is: $finalPrice";
+    }
+    ?>
 
 </body>
 
