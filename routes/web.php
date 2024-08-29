@@ -11,6 +11,10 @@ Route::prefix('activity')->group(base_path('routes/conditionalRedirect.php'));
 Route::prefix('responses')->group(base_path('routes/responses.php'));
 Route::prefix('controllers')->group(base_path('routes/routesWithControllers.php'));
 Route::prefix('practice')->group(base_path('routes/practiceForCA1/solutionForP1.php'));
+Route::prefix('constraint')->group(base_path('routes/parameterConstraints/parameter.constraints.php'));
+Route::prefix('bladeviews')->group(base_path('routes/bladeRoutes.php/routes.with.blade.php'));
+Route::prefix('loops')->group(base_path('routes/bladeRoutes.php/loops.with.blade.php'));
+
 
 
 
