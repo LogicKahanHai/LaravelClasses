@@ -14,6 +14,7 @@ Route::prefix('practice')->group(base_path('routes/practiceForCA1/solutionForP1.
 Route::prefix('constraint')->group(base_path('routes/parameterConstraints/parameter.constraints.php'));
 Route::prefix('bladeviews')->group(base_path('routes/bladeRoutes.php/routes.with.blade.php'));
 Route::prefix('loops')->group(base_path('routes/bladeRoutes.php/loops.with.blade.php'));
+Route::prefix('conditionals')->group(base_path('routes/bladeRoutes.php/conditionals.with.blade.php'));
 
 
 
