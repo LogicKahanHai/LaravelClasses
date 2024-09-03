@@ -1,0 +1,1 @@
+We can create some Layout Templates, like we created the [Layouts Template](../resources/views/layouts.blade.php) 
