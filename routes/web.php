@@ -15,6 +15,7 @@ Route::prefix('constraint')->group(base_path('routes/parameterConstraints/parame
 Route::prefix('bladeviews')->group(base_path('routes/bladeRoutes.php/routes.with.blade.php'));
 Route::prefix('loops')->group(base_path('routes/bladeRoutes.php/loops.with.blade.php'));
 Route::prefix('conditionals')->group(base_path('routes/bladeRoutes.php/conditionals.php'));
+Route::prefix('products')->group(base_path('routes/layoutInheritance.php/product.portfolio.route.php'));
 
 
 
