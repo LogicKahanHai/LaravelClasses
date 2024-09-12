@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserStatus;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -15,7 +16,7 @@ Route::prefix('constraint')->group(base_path('routes/parameterConstraints/parame
 Route::prefix('bladeviews')->group(base_path('routes/bladeRoutes.php/routes.with.blade.php'));
 Route::prefix('loops')->group(base_path('routes/bladeRoutes.php/loops.with.blade.php'));
 Route::prefix('conditionals')->group(base_path('routes/bladeRoutes.php/conditionals.php'));
-Route::prefix('products')->group(base_path('routes/layoutInheritance.php/product.portfolio.route.php'));
+Route::prefix('inheritance')->group(base_path('routes/layoutInheritance.php/product.portfolio.route.php'));
 
 
 
@@ -82,3 +83,6 @@ Route::get('employee/with/{empname}/{salary}', function ($empname, $salary) {
 Route::get('employeeCompact/{empname}/{salary}', function ($empname, $salary) {
     return view("employee", compact("empname", "salary"));
 });
+
+
+Route::get("ca1practice/userstatus", [UserStatus::class, "displayUserStatus"])->name("userstatus");

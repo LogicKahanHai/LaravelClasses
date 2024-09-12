@@ -1,12 +1,13 @@
-@extends('layoutInheritance.layouts')
+@extends('layoutInheritance.baselayout')
 
 @section('title')
     Home Page
 @endsection
 
 @section('content')
-    Welcome to Home Page
+    <h1> Welcome to the Home Page </h1>
 @endsection
+
 
 @section('h')
     active

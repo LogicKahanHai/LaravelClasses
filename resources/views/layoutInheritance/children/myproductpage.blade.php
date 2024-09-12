@@ -1,11 +1,11 @@
-@extends('layoutInheritance.layouts')
+@extends('layoutInheritance.baselayout')
 
 @section('title')
-    Products Page
+    Product Page
 @endsection
 
 @section('content')
-    Welcome to Products Page
+    <h1> Welcome to the Product Page </h1>
 @endsection
 
 

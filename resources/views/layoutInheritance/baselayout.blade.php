@@ -1,12 +1,3 @@
-{{--
-    In this file, we cna keep a template that we can then later inherit in other blade.php
-    files to reuse the code.
-
-    Use Cases
-        1. Navbars
-            ...etc
---}}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,6 +61,11 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        .navbar {
+            margin-bottom: 0 !important;
+            border-radius: 0 !important;
+        }
     </style>
 </head>
 
@@ -77,13 +73,13 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Laravel</a>
+                <a class="navbar-brand" href="/inheritance/homepage">Laravel</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class=@yield('h')><a href="/products/homepage">Home</a></li>
-                <li class=@yield('p')><a href="/products/productspage">Products</a></li>
-                <li class=@yield('a')><a href="/products/aboutpage">About Us</a></li>
-                <li class=@yield('c')><a href="/products/contactpage">Contact Us</a></li>
+                <li class=@yield('h')><a href="/inheritance/homepage">Home</a></li>
+                <li class=@yield('p')><a href="/inheritance/productpage">Products</a></li>
+                <li class=@yield('a')><a href="/inheritance/aboutpage">About Us</a></li>
+                <li class=@yield('c')><a href="/inheritance/contactpage">Contact Us</a></li>
 
             </ul>
         </div>

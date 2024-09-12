@@ -25,3 +25,63 @@ templates in the other files, we can set different values in these variables.
 
 This way we can use the template to keep the theme and layout intact
 for the website and at the same time making it unique to the page
+
+# Examples
+
+## 1. Navbar for a website
+
+Let's create a navbar for a website that we can then
+inherit it to all the other pages, to keep it consistent
+
+### a. Create the BaseLayout
+
+This is the layout which will be inherited to other
+views to reuse the code.
+
+Our navbar will stay in this file.
+
+```bash
+# This command is used to create a blade view.
+
+php artisan make:view layoutInheritance.baselayout
+```
+
+Then add the code to show the navbar in this file.
+
+### b. Create 4 new pages to populate in the navbar
+
+```bash
+php artisan make:view layoutInheritance.children.myhomepage
+php artisan make:view layoutInheritance.children.mycontactpage
+php artisan make:view layoutInheritance.children.myproductpage
+php artisan make:view layoutInheritance.children.myaboutpage
+```
+
+### c. Add the `@extends()` directive in this children files and extend the BaseLayout
+
+```php
+// myhomepage.blade.php
+
+@extends('layoutInheritance.baselayout');
+```
+
+Then we can setup the route to map to this view, and then
+we can see that when the `myhomepage` view is being rendered
+the navbar also shows
+
+### d. Add the `@section()` directives to display specific content for each page
+
+<x-markdown theme="github-dark">
+
+```php
+@section('title')
+    Home Page
+@endsection
+
+@section('content')
+
+<h1> Welcome to the Home Page </h1>
+@endsection
+```
+
+</x-markdown>
