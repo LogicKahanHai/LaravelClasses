@@ -50,7 +50,7 @@ Then add the code to show the navbar in this file.
 
 ### b. Create 4 new pages to populate in the navbar
 
-```shell
+```bash
 php artisan make:view layoutInheritance.children.myhomepage
 php artisan make:view layoutInheritance.children.mycontactpage
 php artisan make:view layoutInheritance.children.myproductpage
