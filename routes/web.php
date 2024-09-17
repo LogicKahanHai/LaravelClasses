@@ -17,6 +17,8 @@ Route::prefix('bladeviews')->group(base_path('routes/bladeRoutes.php/routes.with
 Route::prefix('loops')->group(base_path('routes/bladeRoutes.php/loops.with.blade.php'));
 Route::prefix('conditionals')->group(base_path('routes/bladeRoutes.php/conditionals.php'));
 Route::prefix('inheritance')->group(base_path('routes/layoutInheritance.php/product.portfolio.route.php'));
+Route::prefix('learnprefix')->group(base_path('routes/learnprefix.php'));
+Route::prefix('middlewares')->group(base_path('routes/middlewares.php'));
 
 
 
