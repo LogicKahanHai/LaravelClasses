@@ -19,6 +19,7 @@ Route::prefix('conditionals')->group(base_path('routes/bladeRoutes.php/condition
 Route::prefix('inheritance')->group(base_path('routes/layoutInheritance.php/product.portfolio.route.php'));
 Route::prefix('learnprefix')->group(base_path('routes/learnprefix.php'));
 Route::prefix('middlewares')->group(base_path('routes/middlewares.php'));
+Route::prefix('sessions/intro')->group(base_path('routes/sessionRoutes/sessionIntro.php'));
 
 
 
